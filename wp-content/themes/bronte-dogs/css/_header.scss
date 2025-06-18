@@ -73,3 +73,49 @@
         }
     }
 }
+
+header {
+    background-color: $grey;
+
+    .menu-header {
+        li {
+            margin-right: 33px;
+
+            a {
+                font-family: 'Proxima Nova';
+                font-weight: 700;
+                font-size: 15.92px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                color: #000;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $green;
+                }
+            }
+        }
+    }
+
+    .header-nav {
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 52px 0 52px 0;
+        }
+        
+
+        &__right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__left {
+            padding-left: 12px;
+        }
+    }
+}

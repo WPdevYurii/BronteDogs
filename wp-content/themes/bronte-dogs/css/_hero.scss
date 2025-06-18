@@ -1,0 +1,41 @@
+.hero {
+    background-color: $grey;
+    padding-bottom: 150px;
+
+    &__title {
+        font-family: 'Proxima Nova Bold';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 51px;
+        color: $green;
+        position: relative;
+        padding-top: 41px;
+        margin-bottom: 26px;
+
+        &::before {
+            content: url('../images/yellow-line.png');
+            position: absolute;
+            top: 63px;
+        }
+    }
+
+    &__description {
+        font-family: 'Proxima Nova';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 100%;
+        line-height: 1.2;
+        margin-bottom: 24px;
+    }
+
+    &__left-col {
+         padding-right: 0;
+    }
+
+    &__image-wrap {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        max-width: 680px;
+    }
+}

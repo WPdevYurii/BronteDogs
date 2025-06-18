@@ -20,3 +20,69 @@ input[type='submit'] {
         outline: none;
     }
 }
+
+.cta-button {
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    background-color: $green;
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-size: 15.92px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    transition: 0.3s;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid $green;
+        color: #27AE60;
+        background-color: #F2F2F2;
+    }
+}
+
+.buttons {
+    .button {
+        border-radius: 5px;
+        padding-top: 12px;
+        padding-right: 20px;
+        padding-bottom: 12px;
+        padding-left: 20px;
+        font-family: 'Proxima Nova';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+        text-transform: initial;
+        transition: 0.3s;
+    }
+
+    &__green {
+        background-color: $green;
+        color: $white;
+        border: 1px solid transparent;
+        margin-right: 12px;
+
+        &:hover {
+            background-color: $white;
+            color: $green;
+            border: 1px solid $green;
+        }
+    }
+
+    &__white {
+        background-color: $white;
+        color: $green;
+        border: 1px solid $green;
+
+        &:hover {
+            background-color: $green;
+            color: $white;
+            border: 1px solid transparent;
+        }
+    }
+}

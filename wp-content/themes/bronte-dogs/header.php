@@ -22,19 +22,29 @@
 
     <header>
         <div class="container">
-            <nav id="primary" class="row">
-                <a href="<?= get_home_url(); ?>">
-                    <img src="<?= get_stylesheet_directory_uri() ?>/images/logo.svg" alt="">
-                </a>
-
-                <?php wp_nav_menu(
-                    [
-                        'theme_location' => 'header-menu',
-                        'container' => '',
-                        'menu_class' => 'menu menu-header',
-                        'depth' => 1,
-                    ]
-                ); ?>
+            <nav id="primary" class="row header-nav">
+                <div class="header-nav__wrap">
+                    <div class="header-nav__left">
+                        <?php $logo = get_field('header_logo', 'options');
+                        if(!empty($logo)): ?>
+                            <a href="<?= get_home_url(); ?>">
+                                <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>">
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                    
+                    <div class="header-nav__right">
+                        <?php wp_nav_menu(
+                        [
+                            'theme_location' => 'header-menu',
+                            'container' => '',
+                            'menu_class' => 'menu menu-header',
+                            'depth' => 1,
+                        ]
+                        ); ?>
+                        <button class="cta-button"><?php echo esc_attr('Get in touch'); ?></button>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>

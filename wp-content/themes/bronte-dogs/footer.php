@@ -10,7 +10,12 @@
 				]
 			); ?>
 
-			<p>&copy; <?php bloginfo('name'); ?> &bull; <?= date('Y'); ?> All Rights Reserved</p>
+			<p class="container__copyrights">&copy; 2010 - <?php echo date('Y');
+            $copyrights = get_field('footer_copyright', 'options');
+        	if(!empty($copyrights)):
+            echo $copyrights;
+            endif; ?>
+			</p>
 
 		</div>
 	</footer>

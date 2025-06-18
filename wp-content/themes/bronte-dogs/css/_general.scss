@@ -104,3 +104,9 @@ img.alignright {
 img.aligncenter {
     margin: 1em auto;
 }
+
+.container {
+    @media (min-width: $screen-xl) {
+        max-width: 1040px;
+    }
+}
