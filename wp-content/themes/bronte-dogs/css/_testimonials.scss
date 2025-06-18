@@ -76,6 +76,7 @@
 
 .benefits {
     padding-top: 105px;
+    padding-bottom: 95px;
 
     &__title {
         font-family: 'Proxima Nova';
@@ -102,6 +103,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        margin-bottom: 35px;
     }
 
     &__content {
@@ -155,7 +157,7 @@
 
     &__item-right {
         padding-left: 15px;
-        
+
         h6 {
             font-family: 'Proxima Nova';
             color: $black;
@@ -179,3 +181,21 @@
         margin-bottom: 40px;
     }
 }
+
+.banner {
+    &__container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        @media (min-width: $screen-xl) {
+            max-width: 1310px;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
