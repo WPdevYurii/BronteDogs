@@ -26,6 +26,8 @@ add_theme_support('title-tag');
 add_action('wp_enqueue_scripts', function () {
     // Note: Bootstrap Grid only includes classes like col-*, m-md-3 and pt-2
     wp_enqueue_style('bootstrap_grid', '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap-grid.min.css');
+    // Tiny Slider CSS
+    wp_enqueue_style('tiny-slider-css', 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css');
     wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/style.css', null, filemtime(get_template_directory() . '/css/style.css'));
 });
 
@@ -38,6 +40,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_deregister_script('jquery');
     wp_register_script('jquery', includes_url('/js/jquery/jquery.js'), false, NULL, true);
     wp_enqueue_script('jquery');
+    // Tiny Slider JS
+    wp_enqueue_script('tiny-slider-js', 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js', array(), null, true);
     wp_register_script('custom_scripts', get_template_directory_uri() . '/js/custom.js', 'jquery', filemtime(get_template_directory() . '/js/custom.js'), true);
 
     // Feed PHP data to custom_scripts

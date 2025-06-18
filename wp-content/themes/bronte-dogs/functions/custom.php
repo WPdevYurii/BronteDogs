@@ -41,10 +41,10 @@ add_action('init', function () {
         'publicly_queryable' => true,
         'show_in_nav_menus' => true,
         'exclude_from_search' => false,
-        'supports'      => ['title'],
+        'supports'      => ['title', 'editor'],
         'has_archive'   => false,
-        // 'rewrite' => array('slug' => 'faq', 'with_front' => false),
         'menu_icon'     => 'dashicons-testimonial',
-        // 'taxonomies' => ['faq_category'],
     ]);
 });
+
+add_filter( 'gform_disable_css', '__return_true' );

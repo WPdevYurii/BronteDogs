@@ -26,3 +26,20 @@ jQuery(function ($) {
   //   }
   // });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  tns({
+    container: '.slides',
+    // items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    fixedWidth: 280, // Adjust to your needs
+    // gutter: 50,
+    controls: false,
+    nav: false,
+    mouseDrag: true,
+    loop: true,
+    swipeAngle: false,
+    autoplayButtonOutput: false
+  });
+});

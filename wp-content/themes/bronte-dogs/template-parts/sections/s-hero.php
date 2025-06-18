@@ -23,16 +23,16 @@ $b_url_2 = get_sub_field('button_2_url');
                 <div class="buttons">
                     <div class="buttons__wrap">
                         <?php if(!empty($b_text_1)): ?>
-                            <button class="button buttons__green"><?php echo esc_html($b_text_1); ?></button>
+                            <button class="button buttons__green"><?php echo esc_html($b_text_1['title']); ?></button>
                         <?php endif; ?>
 
                         <?php if(!empty($b_text_2)): ?>
-                        <button class="button buttons__white"><?php echo esc_html($b_text_2); ?></button>
+                        <button class="button buttons__white"><?php echo esc_html($b_text_2['title']); ?></button>
                         <?php endif; ?>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-md-6 offset-md-1">
                 <?php if(!empty($image)): ?>
                 <div class="hero__image-wrap">
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
@@ -41,5 +41,4 @@ $b_url_2 = get_sub_field('button_2_url');
             </div>
         </div>
     </div>
-    
 </section>
