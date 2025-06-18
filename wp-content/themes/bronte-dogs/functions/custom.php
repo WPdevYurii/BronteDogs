@@ -17,20 +17,20 @@ if (function_exists('acf_add_options_page')) {
  */
 add_action('init', function () {
 
-    register_post_type('post_faq', [
+    register_post_type('post_testimonials', [
         'labels' => [
-            'name' => __('FAQs'),
-            'singular_name' =>  __('FAQ'),
+            'name' => __('Testimonials'),
+            'singular_name' =>  __('Testimonial'),
             'add_new' =>  __('Add new'),
-            'add_new_item' =>  __('Add new FAQ'),
+            'add_new_item' =>  __('Add new Testimonial'),
             'edit' =>  __('Edit'),
-            'edit_item' =>  __('Edit FAQ'),
-            'new_item' =>  __('New FAQ'),
-            'view' =>  __('View FAQs'),
-            'view_item' =>  __('View FAQs'),
-            'search_items' =>  __('Search FAQs'),
-            'not_found' =>  __('No FAQs found'),
-            'not_found_in_trash' =>  __('No FAQs found in Trash'),
+            'edit_item' =>  __('Edit Testimonial'),
+            'new_item' =>  __('New Testimonial'),
+            'view' =>  __('View Testimonials'),
+            'view_item' =>  __('View Testimonials'),
+            'search_items' =>  __('Search Testimonials'),
+            'not_found' =>  __('No Testimonials found'),
+            'not_found_in_trash' =>  __('No Testimonials found in Trash'),
         ],
         'rewrite' => [
             'with_front' => false
@@ -44,34 +44,7 @@ add_action('init', function () {
         'supports'      => ['title'],
         'has_archive'   => false,
         // 'rewrite' => array('slug' => 'faq', 'with_front' => false),
-        'menu_icon'     => 'dashicons-editor-help',
+        'menu_icon'     => 'dashicons-testimonial',
         // 'taxonomies' => ['faq_category'],
     ]);
 });
-
-/**
- * Register Taxonomies
- */
-add_action('init', function () {
-
-    register_taxonomy('faq_category', ['post_faq'], [
-        'labels' => [
-            'name' => "FAQ Category",
-            'singular_name' => "FAQ Categories"
-        ],
-        "public" => true,
-        "publicly_queryable" => false,
-        "hierarchical" => true,
-        "show_ui" => true,
-        "show_in_menu" => true,
-        "show_in_nav_menus" => false,
-        "query_var" => true,
-        "rewrite" => ['slug' => 'faq-category', 'with_front' => false],
-        "show_admin_column" => true,
-        "show_in_rest" => true,
-        "rest_base" => "faq_category",
-        "show_in_quick_edit" => true,
-    ]);
-});
-
-
