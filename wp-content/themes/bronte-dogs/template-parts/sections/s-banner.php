@@ -1,7 +1,8 @@
 <?php 
 $banner = get_sub_field('banner_image');
+$bm = get_sub_field('banner_bm');
 ?>
-<section class="banner">
+<section class="banner" style="margin-bottom: <?php echo $bm; ?>px;">
     <div class="banner__container">
         <?php if(!empty($banner)): ?>
         <div class="banner__wrap">

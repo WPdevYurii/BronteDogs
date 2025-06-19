@@ -10,3 +10,18 @@ footer {
         }
     }
 }
+
+.f-wrap {
+    background-color: $white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 36px 30px 26px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+}

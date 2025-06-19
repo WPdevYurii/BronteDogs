@@ -1,3 +1,68 @@
+body.slug-home-page {
+    border-left: 6px solid $green;
+}
+
+.hero {
+    background-color: $grey;
+    padding-bottom: 135px;
+    overflow: hidden;
+
+    &__title {
+        font-family: 'Proxima Nova';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 51px;
+        color: $green;
+        position: relative;
+        padding-top: 41px;
+        margin-bottom: 26px;
+
+        &::before {
+            content: url('../images/yellow-line.png');
+            position: absolute;
+            top: 63px;
+        }
+    }
+
+    &__description {
+        font-family: 'Proxima Nova';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 100%;
+        line-height: 1.2;
+        margin-bottom: 24px;
+    }
+
+    &__left-col {
+         padding-right: 0;
+
+        @media (min-width: $screen-sm) {
+            max-width: 1310px;
+        }
+        @media (max-width: $screen-sm) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__image-wrap {
+        position: relative;
+    
+        img {
+            max-width: none;
+            position: absolute;
+            top: 0;
+            left: -30px;
+            height: 450px;
+
+            @media (max-width: $screen-sm) {
+                max-width: 100%;
+                height: auto;
+                position: static;
+            }
+        }
+    }
+}
+
 .testimonials {
     padding-top: 55px;
 

@@ -28,7 +28,7 @@
 						</div>
 					</div>
 				</div>
-				<p class="container__copyrights">&copy; 2010 - <?php echo date('Y');
+				<p class="container__copyrights">&copy; <?php echo esc_html(' 2010 - '); ?><?php echo date('Y');
 				$copyrights = get_field('footer_copyright', 'options');
 				if(!empty($copyrights)):
 				echo $copyrights;
