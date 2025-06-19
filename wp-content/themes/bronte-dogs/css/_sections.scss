@@ -8,7 +8,7 @@ body.slug-home-page {
     overflow: hidden;
 
     &__title {
-        font-family: 'Proxima Nova';
+        font-family: $font-family;
         font-weight: 700;
         font-size: 48px;
         line-height: 51px;
@@ -25,7 +25,7 @@ body.slug-home-page {
     }
 
     &__description {
-        font-family: 'Proxima Nova';
+        font-family: $font-family;
         font-weight: 400;
         font-size: 13px;
         line-height: 100%;
@@ -54,7 +54,7 @@ body.slug-home-page {
             left: -30px;
             height: 450px;
 
-            @media (max-width: $screen-sm) {
+            @media (max-width: $screen-md) {
                 max-width: 100%;
                 height: auto;
                 position: static;
@@ -67,7 +67,7 @@ body.slug-home-page {
     padding-top: 55px;
 
     &__title {
-        font-family: 'Proxima Nova';
+        font-family: $font-family;
         font-weight: 700;
         font-size: 24px;
         line-height: 100%;
@@ -75,7 +75,7 @@ body.slug-home-page {
     }
 
     &__subtitle {
-        font-family: 'Proxima Nova';
+        font-family: $font-family;
         font-weight: 400;
         font-size: 16px;
         line-height: 100%;
@@ -119,14 +119,14 @@ body.slug-home-page {
     }
 
     &__item-text {
-        font-family: 'Proxima Nova';
+        font-family: $font-family;
         font-weight: 400;
         font-size: 16px;
         line-height: 100%;
     }
 
     &__item-name {
-        font-family: 'Proxima Nova';
+        font-family: $font-family;
         font-weight: 700;
         font-size: 16px;
         line-height: 100%;
@@ -144,7 +144,7 @@ body.slug-home-page {
     padding-bottom: 95px;
 
     &__title {
-        font-family: 'Proxima Nova';
+        font-family: $font-family;
         font-weight: 700;
         font-size: 24px;
         line-height: 1.1;
@@ -169,10 +169,15 @@ body.slug-home-page {
         justify-content: flex-start;
         align-items: flex-start;
         margin-bottom: 35px;
+
+        @media (max-width: $screen-sm) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
     }
 
     &__content {
-        font-family: 'Proxima Nova';
+        font-family: $font-family;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.2;
@@ -188,7 +193,7 @@ body.slug-home-page {
     }
 
     &__price {
-        font-family: 'Proxima Nova';
+        font-family: $font-family;
         font-weight: 700;
         font-size: 20px;
         line-height: 100%;
@@ -205,6 +210,10 @@ body.slug-home-page {
         max-width: 356px;
         height: 58px;
         position: relative;
+
+        @media (max-width: $screen-md) {
+            margin-bottom: 30px;
+        }
 
         &::before {
             content: url('../images/price-arrow.png');
@@ -224,7 +233,7 @@ body.slug-home-page {
         padding-left: 15px;
 
         h6 {
-            font-family: 'Proxima Nova';
+            font-family: $font-family;
             color: $black;
             font-weight: 700;
             font-size: 15px;
@@ -233,7 +242,7 @@ body.slug-home-page {
         }
 
         p {
-            font-family: 'Proxima Nova';
+            font-family: $font-family;
             font-weight: 400;
             font-size: 15.46px;
             line-height: 24.06px;

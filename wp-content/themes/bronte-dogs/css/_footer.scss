@@ -24,4 +24,16 @@ footer {
         align-items: center;
         margin-bottom: 70px;
     }
+
+    .buttons__wrap {
+        @media (max-width: $screen-sm) {
+            text-align: right;
+        }
+
+        .buttons__green {
+            @media (max-width: $screen-sm) {
+                margin-right: 0;
+            }
+        }
+    }
 }

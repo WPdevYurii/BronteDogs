@@ -42,6 +42,12 @@
                         ]
                         ); ?>
                         <button class="cta-button"><?php echo esc_attr('Get in touch'); ?></button>
+
+                        <button class="mobile-menu-toggle d-md-none" aria-label="Toggle mobile menu">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </button>
                     </div>
                 </div>
             </nav>

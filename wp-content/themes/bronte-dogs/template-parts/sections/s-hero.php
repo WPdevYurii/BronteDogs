@@ -11,7 +11,7 @@ $b_url_2 = get_sub_field('button_2_url');
 <section class="hero">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-5 hero__left-col">
+            <div class="col-12 col-lg-5 hero__left-col">
                 <?php if(!empty($title)): ?>
                 <h1 class="hero__title"><?php echo esc_html($title); ?></h1>
                 <?php endif; ?>
@@ -32,7 +32,7 @@ $b_url_2 = get_sub_field('button_2_url');
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 offset-md-1 offset-sm-0">
+            <div class="col-12 col-lg-6 offset-lg-1">
                 <?php if(!empty($image)): ?>
                 <div class="hero__image-wrap">
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">

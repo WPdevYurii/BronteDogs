@@ -10,7 +10,7 @@ $button = get_sub_field('button');
 <section class="benefits">
     <div class="container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
                 <?php if(!empty($title) && !empty($subtitle)): ?>
                 <h3 class="benefits__title"><?php echo esc_html($title); ?></br><span><?php echo esc_html($subtitle); ?></span></h3>
                 <?php endif; ?>
@@ -33,7 +33,7 @@ $button = get_sub_field('button');
 
                 <div class="benefits__p-container"></div>
             </div>
-            <div class="col-7">
+            <div class="col-12 col-lg-7">
                 <?php
                 if( have_rows('benefits') ): ?>
                     <div class="benefits__repeater">

@@ -41,3 +41,15 @@ document.addEventListener('DOMContentLoaded', function () {
     autoplayButtonOutput: false
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const sideMenu = document.querySelector('.side-menu');
+
+    if (menuToggle && sideMenu) {
+        menuToggle.addEventListener('click', () => {
+            const isOpen = sideMenu.style.transform === 'translateX(0%)';
+            sideMenu.style.transform = isOpen ? 'translateX(110%)' : 'translateX(0%)';
+        });
+    }
+});
